@@ -194,3 +194,13 @@ if (studentScore >= 90 && studentScore <= 100) {
 }
 
 // 15
+
+const carSpeedKilometersHour = 44;
+const speedLimitKilometers = 50;
+
+if (carSpeedKilometersHour <= speedLimitKilometers) {
+    console.log(`Speed is fine`);
+} else {
+    console.log(`Speeding!`);
+}
+
