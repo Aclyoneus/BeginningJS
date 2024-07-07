@@ -161,12 +161,18 @@ const number = 2;
 if (number % 5 === 0 && number % 3 === 0) {
     console.log(`Divisible by 3 and 5`);
 } else if (number % 5 === 0) {
-    console.log(`Divisible by 5`)
+    console.log(`Divisible by 5`);
 } else if (number % 3 === 0) {
-    console.log(`Divisible by 3`)
+    console.log(`Divisible by 3`);
 } else {
-    console.log(`Non divisible by 3 or 5`)
+    console.log(`Non divisible by 3 or 5`);
 }
 
 // 13
 
+const radius = 5;
+const circleArea = Math.PI * radius ** 2;
+
+console.log(circleArea);
+
+// 14
