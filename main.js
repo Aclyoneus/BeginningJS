@@ -176,3 +176,21 @@ const circleArea = Math.PI * radius ** 2;
 console.log(circleArea);
 
 // 14
+
+const studentScore = 84;
+
+if (studentScore >= 90 && studentScore <= 100) {
+    console.log(`Student's grade is A`);
+} else if (studentScore < 90 && studentScore >= 80) {
+    console.log(`Student's grade is B`);
+} else if (studentScore < 80 && studentScore >= 70) {
+    console.log(`Student's grade is C`);
+} else if (studentScore < 70 && studentScore >= 60) {
+    console.log(`Student's grade is D`);
+} else if (studentScore < 60 && studentScore >= 0) {
+    console.log(`Student's grade is F`);
+} else {
+    console.log(`There is a mistake in student score range`);
+}
+
+// 15
