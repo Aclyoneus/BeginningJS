@@ -213,7 +213,7 @@ if(personAge >= 18) {
     isAdult = true;
 }
 
-alert(isAdult)
+alert(isAdult);
 
 // 17
 
@@ -229,10 +229,10 @@ if (driverAge >= 18) {
 
 if (isGrownup === true && hasDrivingLicense === true) {
     canDriveLegally = true;
-    console.log(`He can drive legally : ${canDriveLegally}`)
+    console.log(`He can drive legally : ${canDriveLegally}`);
 } else {
     canDriveLegally = false;
-    console.log(`He can drive legally : ${canDriveLegally}`)
+    console.log(`He can drive legally : ${canDriveLegally}`);
 }
 
 
