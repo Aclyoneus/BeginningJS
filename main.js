@@ -195,7 +195,7 @@ if (studentScore >= 90 && studentScore <= 100) {
 
 // 15
 
-const carSpeedKilometersHour = 44;
+const carSpeedKilometersHour = 66;
 const speedLimitKilometers = 50;
 
 if (carSpeedKilometersHour <= speedLimitKilometers) {
@@ -216,3 +216,23 @@ if(personAge >= 18) {
 alert(isAdult)
 
 // 17
+
+const driverAge = 21;
+const hasDrivingLicense = true;
+let isGrownup, canDriveLegally;
+
+if (driverAge >= 18) {
+    isGrownup = true;
+} else {
+    isGrownup = false;
+}
+
+if (isGrownup === true && hasDrivingLicense === true) {
+    canDriveLegally = true;
+    console.log(`He can drive legally : ${canDriveLegally}`)
+} else {
+    canDriveLegally = false;
+    console.log(`He can drive legally : ${canDriveLegally}`)
+}
+
+
