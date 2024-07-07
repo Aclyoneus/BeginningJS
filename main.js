@@ -204,3 +204,15 @@ if (carSpeedKilometersHour <= speedLimitKilometers) {
     console.log(`Speeding!`);
 }
 
+// 16
+
+const personAge = 16;
+let isAdult = false;
+
+if(personAge >= 18) {
+    isAdult = true;
+}
+
+alert(isAdult)
+
+// 17
