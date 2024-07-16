@@ -25,22 +25,12 @@ const englishGrade = 4;
 const averageGrade = (physicsGrade + mathGrade + englishGrade) / 3;
 
 if (averageGrade >= 4) {
-    console.log(`Good job!`);
+    console.log('Good job!');
 } else {
-    console.log(`Try harder!`);
+    console.log('Try harder!');
 }
 
 // 4
-
-// const currentAge = 30;
-// const retirenmentAgeInPoland = 67;
-// let yearsLeftToRetirenment = retirenmentAgeInPoland;
-//
-// yearsLeftToRetirenment = retirenmentAgeInPoland - currentAge;
-//
-// console.log(yearsLeftToRetirenment);
-
-// OR shorter one:
 
 const currentAge = 30;
 const retirenmentAgeInPoland = 67;
@@ -62,7 +52,7 @@ if (isPayingVAT) {
 
 taxToPay = taxToPay + monthlyIncome * incomeTaxRate;
 
-console.log(`tax to pay: ` + taxToPay);
+console.log('tax to pay: ' + taxToPay);
 
 // 6
 
@@ -87,7 +77,7 @@ if (currentMonth < 4) {
 } else if (currentMonth >= 10 && currentMonth < 13) {
     console.log(`It's autumn!`);
 } else {
-    console.log(`There is no such month!`);
+    console.log('There is no such month!');
 }
 
 // 8
@@ -95,7 +85,7 @@ if (currentMonth < 4) {
 const personWeight = 72;
 const personHeight = 1.82;
 
-bodyMassIndex = personWeight / (personHeight * personHeight);
+const bodyMassIndex = personWeight / (personHeight * personHeight);
 console.log(bodyMassIndex);
 
 // 9
@@ -103,23 +93,23 @@ console.log(bodyMassIndex);
 const age = 19;
 
 if (age >= 18) {
-    console.log(`A citizen can vote`);
+    console.log('A citizen can vote');
 } else {
     console.log(`A citizen can't vote`);
 }
 
 // 10
 
-const currentColor = `red`;
+const currentColor = 'red';
 
-if (currentColor === `red`) {
-    console.log(`Stop`);
-} else if (currentColor === `yellow`) {
-    console.log(`Speed up`);
-} else if (currentColor === `green`) {
-    console.log(`Go`);
+if (currentColor === 'red') {
+    console.log('Stop');
+} else if (currentColor === 'yellow') {
+    console.log('Speed up');
+} else if (currentColor === 'green') {
+    console.log('Go');
 } else {
-    console.log(`Check your knowledge of traffic lights colors!`);
+    console.log('Check your knowledge of traffic lights colors!');
 }
 
 // 11
@@ -127,31 +117,31 @@ if (currentColor === `red`) {
 const month = 1;
 
 if (month === 1) {
-    console.log(`January`);
+    console.log('January');
 } else if (month === 2) {
-    console.log(`February`);
+    console.log('February');
 } else if (month === 3) {
-    console.log(`March`);
+    console.log('March');
 } else if (month === 4) {
-    console.log(`April`);
+    console.log('April');
 } else if (month === 5) {
-    console.log(`May`);
+    console.log('May');
 } else if (month === 6) {
-    console.log(`June`);
+    console.log('June');
 } else if (month === 7) {
-    console.log(`July`);
+    console.log('July');
 } else if (month === 8) {
-    console.log(`August`);
+    console.log('August');
 } else if (month === 9) {
-    console.log(`September`);
+    console.log('September');
 } else if (month === 10) {
-    console.log(`October`);
+    console.log('October');
 } else if (month === 11) {
-    console.log(`November`);
+    console.log('November');
 } else if (month === 12) {
-    console.log(`December`);
+    console.log('December');
 } else {
-    console.log(`We have only 12 months!`);
+    console.log('We have only 12 months!');
 }
 
 // 12
@@ -159,14 +149,76 @@ if (month === 1) {
 const number = 2;
 
 if (number % 5 === 0 && number % 3 === 0) {
-    console.log(`Divisible by 3 and 5`);
+    console.log('Divisible by 3 and 5');
 } else if (number % 5 === 0) {
-    console.log(`Divisible by 5`)
+    console.log('Divisible by 5');
 } else if (number % 3 === 0) {
-    console.log(`Divisible by 3`)
+    console.log('Divisible by 3');
 } else {
-    console.log(`Non divisible by 3 or 5`)
+    console.log('Non divisible by 3 or 5');
 }
 
 // 13
+
+const radius = 5;
+const circleArea = Math.PI * (radius ** 2);
+
+console.log(circleArea);
+
+// 14
+
+const studentScore = 84;
+
+if (studentScore >= 90 && studentScore <= 100) {
+    console.log(`Student's grade is A`);
+} else if (studentScore >= 80) {
+    console.log(`Student's grade is B`);
+} else if (studentScore >= 70) {
+    console.log(`Student's grade is C`);
+} else if (studentScore >= 60) {
+    console.log(`Student's grade is D`);
+} else if (studentScore >= 0) {
+    console.log(`Student's grade is F`);
+} else {
+    console.log('There is a mistake in student score range');
+}
+
+// 15
+
+const carSpeedKilometersHour = 66;
+const speedLimitKilometers = 50;
+
+if (carSpeedKilometersHour <= speedLimitKilometers) {
+    console.log('Speed is fine');
+} else {
+    console.log('Speeding!');
+}
+
+// 16
+
+const personAge = 16;
+let isAdult = false;
+
+if (personAge >= 18) {
+    isAdult = true;
+}
+
+alert(isAdult);
+
+// 17
+
+const driverAge = 21;
+const hasDrivingLicense = true;
+let isGrownup, canDriveLegally;
+
+isGrownup = driverAge >= 18 ? true : false;
+
+if (isGrownup === true && hasDrivingLicense === true) {
+    canDriveLegally = true;
+} else {
+    canDriveLegally = false;
+}
+
+console.log(`He can drive legally : ${canDriveLegally}`);
+
 
