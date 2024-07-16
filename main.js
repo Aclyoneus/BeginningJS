@@ -32,16 +32,6 @@ if (averageGrade >= 4) {
 
 // 4
 
-// const currentAge = 30;
-// const retirenmentAgeInPoland = 67;
-// let yearsLeftToRetirenment = retirenmentAgeInPoland;
-//
-// yearsLeftToRetirenment = retirenmentAgeInPoland - currentAge;
-//
-// console.log(yearsLeftToRetirenment);
-
-// OR shorter one:
-
 const currentAge = 30;
 const retirenmentAgeInPoland = 67;
 const yearsLeftToRetirenment = retirenmentAgeInPoland - currentAge;
@@ -221,20 +211,14 @@ const driverAge = 21;
 const hasDrivingLicense = true;
 let isGrownup, canDriveLegally;
 
-// if (driverAge >= 18) {
-//     isGrownup = true;
-// } else {
-//     isGrownup = false;
-// }
-
 isGrownup = driverAge >= 18 ? true : false;
 
 if (isGrownup === true && hasDrivingLicense === true) {
     canDriveLegally = true;
-    console.log(`He can drive legally : ${canDriveLegally}`);
 } else {
     canDriveLegally = false;
-    console.log(`He can drive legally : ${canDriveLegally}`);
 }
+
+console.log(`He can drive legally : ${canDriveLegally}`);
 
 
